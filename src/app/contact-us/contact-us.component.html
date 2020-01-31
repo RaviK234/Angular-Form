@@ -1,0 +1,194 @@
+<header>
+    <div class="header-inr">
+        <nav class="navbar navbar-inverse navbar-static-top example-8">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar8">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar8" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-center ">
+                        <li>
+                            <a href="#">Solutions</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Support</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Partner</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Sign In</a>
+                    </li>
+                    <li class="try-btn">
+                        <a href="#" class="btn btn-custom">Try For Free </a>
+                    </li>
+                </ul>
+
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+    </div>
+</header>
+<div class="interprise">
+    <div class="inter-head">
+        <h2>Enterprise Plan</h2>
+    </div>
+    <p>Fill out these detail to get started with our interprise plans.</p>
+</div>
+<div class="contact-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 centered">
+                <form class="well form-inr px-md-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                    <h2 class="text-center">Contact us</h2>
+                    <div class="form-group" [ngClass]="{'has-error' : contactForm.get('userName').errors && (contactForm.get('userName').touched || contactForm.get('userName').dirty)}">
+                        <input type="text" class="form-control" formControlName="userName" id="userName" placeholder="Enter Your Name*" required>
+                        <div *ngIf="contactForm.controls.userName.errors && contactForm.controls.userName.touched">
+                            <div class="text-danger" *ngIf="contactForm.controls.userName.errors.required">User Name is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group" [ngClass]="{'has-error' : contactForm.get('userEmail').errors && (contactForm.get('userEmail').touched || contactForm.get('userEmail').dirty)}">
+                        <input type="email" class="form-control" id="userEmail" formControlName="userEmail" placeholder="Enter Your email*">
+                        <div *ngIf="contactForm.controls.userEmail.errors && contactForm.controls.userEmail.touched">
+                            <div class="text-danger" *ngIf="contactForm.controls.userEmail.errors.required">Email is required</div>
+                            <div class="text-danger" *ngIf="contactForm.controls.userEmail.errors.email">Entered valid Email Address.</div>
+                        </div>
+                    </div>
+                    <div class="form-group" [ngClass]="{'has-error' : contactForm.get('subject').errors && (contactForm.get('subject').touched || contactForm.get('subject').dirty)}">
+                        <input type="text" class="form-control" id="subject" formControlName="subject" placeholder="Enter Subject*">
+                        <div *ngIf="contactForm.controls.subject.errors && contactForm.controls.subject.touched">
+                            <div class="text-danger" *ngIf="contactForm.controls.subject.errors.required">Subject is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group" [ngClass]="{'has-error' : contactForm.get('message').errors && (contactForm.get('message').touched || contactForm.get('message').dirty)}">
+                        <textarea class="form-control" id="message" formControlName="message" placeholder="Please enter your message here...*" rows="5"></textarea>
+                        <div *ngIf="contactForm.controls.message.errors && contactForm.controls.message.touched">
+                            <div class="text-danger" *ngIf="contactForm.controls.message.errors.required">Message is required</div>
+                        </div>
+                    </div>
+                    <button type="submit" [disabled]="contactForm.invalid" class="btn btn-success btn-lg btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-top navbar-inverse">
+    <div class="footer-top-inr">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="logo-img">
+                        <a href="#">
+                            <img src="https://2n0a1j274jhf7cf691fcgaay-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/180-white.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="nav navbar-nav">
+                        <h4>Product</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">What is GDPR</a>
+                            </li>
+                            <li>
+                                <a href="#">What is CCPA</a>
+                            </li>
+                            <li>
+                                <a href="#">What is LGPD</a>
+                            </li>
+                            <li>
+                                <a href="#">What is ePrivacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Free GDPR Audit</a>
+                            </li>
+                            <li>
+                                <a href="#">IAB</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="nav navbar-nav">
+                        <h4>Alternative</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Cookiebot</a>
+                            </li>
+                            <li>
+                                <a href="#">Cookiepro</a>
+                            </li>
+                            <li>
+                                <a href="#">Iubenda</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="nav navbar-nav">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                            <li>
+                                <a href="#">Reseller</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="demo">
+                        <a href="#" class="demo-btn">
+                            Request a Demo
+                        </a>
+                        <ul class="social">
+                            <li>
+                                <a>
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-inr">
+
+    </div>
+</footer>

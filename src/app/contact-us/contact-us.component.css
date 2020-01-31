@@ -1,0 +1,158 @@
+  .navbar-inverse {
+      padding: 8px 0;
+  }
+  
+  .navbar-right {
+      margin-right: 0;
+  }
+  
+  .navbar-inverse .navbar-nav li a {
+      color: #ffffff;
+      letter-spacing: 0.6px;
+      font-size: 15px;
+      text-decoration: none;
+  }
+  
+  .navbar-center li a:hover {
+      border-bottom: 3px solid #2a652a;
+  }
+  
+  .navbar-center {
+      padding: 0px;
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute;
+  }
+  
+  .btn-custom {
+      border: 1px solid #ddd;
+      padding: 5px 10px;
+  }
+  
+  .try-btn {
+      padding: 10px 0;
+  }
+  
+  .interprise {
+      text-align: center;
+      padding: 10px 0 40px;
+  }
+  
+  .inter-head h2 {
+      padding-bottom: 30px;
+      position: relative;
+      margin-bottom: 23px;
+  }
+  
+  .inter-head h2:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: #2a652a;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+  }
+  
+  .form-inr {
+      padding: 10px 30px 30px;
+  }
+  
+  .contact-form {
+      padding: 50px 0;
+      background: #f9f9f9;
+  }
+  
+  .col-5 {
+      width: 20%;
+  }
+  
+  .footer-top.navbar-inverse {
+      padding: 20px 30px;
+  }
+  
+  .footer-top .row {
+      display: flex;
+      color: #fff;
+  }
+  
+  .footer-top ul {
+      padding: 0;
+  }
+  
+  .footer-top .nav li {
+      list-style: none;
+      padding: 5px 0;
+  }
+  
+  .footer-top .navbar-nav a {
+      color: #bbb !important;
+  }
+  
+  .footer-top a:hover {
+      opacity: 0.8;
+  }
+  
+  .demo {
+      display: inline-block;
+      width: 100%;
+  }
+  
+  .demo li {
+      display: inline;
+      padding: 20px 15px;
+      border-bottom: 1px solid #2a652a;
+      margin: 0 5px;
+  }
+  
+  .demo-btn {
+      padding: 15px;
+      background: #2a652a;
+      color: #fff;
+      display: block;
+      text-align: center;
+  }
+  
+  .demo-btn:hover {
+      text-decoration: none;
+  }
+  
+  .social {
+      margin-top: 20px;
+  }
+  
+  .demo .social a {
+      display: inline-block;
+      background: #fff;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      color: #000;
+      font-size: 20px;
+  }
+  
+  @media (max-width:991px) {
+      .footer-top .row {
+          display: inline-block;
+      }
+      .col-5 {
+          width: 100%;
+          margin-bottom: 30px;
+      }
+  }
+  
+  @media (max-width:767px) {
+      .navbar-center {
+          position: initial;
+          transform: initial;
+      }
+      .navbar-right {
+          display: none;
+      }
+      .navbar-nav {
+          margin: 0;
+      }
+  }
